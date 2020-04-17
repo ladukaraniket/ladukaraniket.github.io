@@ -74,7 +74,7 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #b6b6b6;
 }
 
 /**
@@ -165,8 +165,9 @@ a:hover, a:focus, a:active {
   
   /* Nav Meu Container */
   #nav-menu-container {
-	float: right;	
-	margin: 5px 0;
+	position: relative;
+	float: left;
+	left: 30%;
 	background-color: #000000;
   }
   
@@ -349,7 +350,7 @@ a:hover, a:focus, a:active {
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
-	color: #313131;
+	color: #ffffff;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
@@ -1267,7 +1268,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: #111111;
 }
 .grey-section p.lead {
 	color: #7d7d7d;
@@ -1283,7 +1284,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
 	font-size: 3.6rem;
-	color: #313131;
+	color: #dddcdc;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
@@ -1738,7 +1739,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: #FFFFFF;
+	background: rgb(0, 0, 0);
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
@@ -1785,7 +1786,7 @@ header .logo a {
 }
 .about-content .info-list li strong {
 	font-family: "poppins-bold", sans-serif;
-	color: #313131;
+	color: #dadada;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	font-size: 1.5rem;
@@ -1948,7 +1949,7 @@ header .logo a {
 	display: block;
 	height: 3px;
 	width: 50px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(211, 211, 211, 0.473);
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -2038,7 +2039,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	background: #FFFFFF;
+	background: rgb(0, 0, 0);
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
