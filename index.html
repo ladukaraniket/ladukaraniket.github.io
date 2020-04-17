@@ -15,6 +15,16 @@
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+	<!-- Bootstrap CSS File -->
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+	<!-- Libraries CSS Files -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
  	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
@@ -35,19 +45,53 @@
 
 <body id="top">
 
-	<!-- header 
-   ================================================== -->
-   <header>   	
-   	
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-						<li><a href="styles.html" title="">Style Demo</a></li>				
-				
-   </header> <!-- /header -->
+
+	<!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+			<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+			<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+			<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+			<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+			<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+			<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+	
 
 	<!-- intro section
    ================================================== -->
@@ -76,11 +120,10 @@
    	</div> <!-- /intro-content --> 
 
    	<ul class="intro-social">        
-         <li><a href="https://www.linkedin.com/in/ladukaraniket/"><i class="fab fa-2x fa-linkedin"></i></a></li>
-         <li><a href="https://www.hackerrank.com/ladukaraniket"><i class="fab fa-2x fa-hackerrank"></i></a></li>
-         <li><a href="https://github.com/ladukaraniket"><i class="fab fa-2x fa-github"></i></a></li>
-         <li><a href="#"><i class="fas fa-2x fa-file-invoice"></i></a></li>
-         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+         <li><a target="_blank" href="https://www.linkedin.com/in/ladukaraniket/"><i class="fab fa-2x fa-linkedin"></i></a><p class="slc">LinkedIn</p></li>
+         <li><a target="_blank" href="https://www.hackerrank.com/ladukaraniket"><i class="fab fa-2x fa-hackerrank"></i></a><p class="slc">HackerRank</p></li>
+         <li><a target="_blank" href="https://github.com/ladukaraniket"><i class="fab fa-2x fa-github"></i></a><p class="slc">GitHub</p></li>
+         <li><a target="_blank" href="#"><i class="fas fa-2x fa-file-invoice"></i></a><p class="slc">Resume</p></li>
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
@@ -139,13 +182,13 @@
 
 				<ul class="">
 				   <li>
-				   	<strong>HTML5</strong>
+				   	<strong>Java</strong>
 				   </li>
 				   <li>
-				   	<strong>CSS3</strong>
+				   	<strong>Pythin</strong>
 				   </li>
 				   <li>
-				   	<strong>JQuery</strong>
+				   	<strong>C</strong>
 				   </li>
 				   <li>
 				   	<strong>PHP</strong>
@@ -284,7 +327,12 @@
 
 	   				<div class="timeline-content">
 	   					<h4>University of Mumbai</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+						   <p>Pursued Engineering in the field of Information Technology. <br>
+							Part of the Following Committees:<br>
+							ISTE - Tech Head<br>
+							ACM  - Tech Head<br>
+							EWT  - Volunteer<br>
+							<b>Cumulative GPA - 8.97</b></p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -296,16 +344,39 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
-	   					<p>May 2013 - June 2014</p>
+	   					<h3>HSC</h3>
+	   					<p>June 2014 - May 2016</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Design College</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<h4>Shubham Raje Jr. College</h4>
+						   <p>Opted for Information Technology as an elective.<br>
+							<b>Overall Score - 83.69%</b>
+						   </p>
 	   				</div>
 
-	   			</div> <!-- /timeline-block -->
+				   </div> <!-- /timeline-block -->
+				   
+
+				   <div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>ICSE</h3>
+						<p>June 2009 - May 2014</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Smt. Sulochanadevi Singhania School</h4>
+						<p>Chose Computer Applications as the elective.<br>
+						 <b>Overall Score - 95.6%</b>
+						</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
 
    			</div> <!-- /timeline-wrap -->   			
 
@@ -692,20 +763,7 @@
 
 			   </div> <!-- /service -->
 
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
-
-	            <div class="service-content">
-
-	            	 <h3>Consultancy</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-	        			
-	            </div>	               
-
-			   </div> <!-- /service -->
+			  
 
 	      </div> <!-- /services-list -->
    		
@@ -730,7 +788,7 @@
 						</div>
 
 						<h3 class="stat-count">
-							1500
+							3
 						</h3>
 
 						<h5 class="stat-title">
@@ -762,11 +820,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							200
+							4
 						</h3>
 
 						<h5 class="stat-title">
-							Awards Received
+							Publications
 						</h5>
 
 					</div> <!-- /stat -->									
@@ -778,11 +836,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							120
+							10
 						</h3>
 
 						<h5 class="stat-title">
-							Crazy Ideas
+							Courses Completed
 						</h5>
 
 					</div> <!-- /stat -->
@@ -841,7 +899,7 @@
 
    		
 
-   		<div class="col-four tab-full collapse">
+   		<div class="col-four tab-full ">
 
    			<div class="icon">
    				<i class="icon-mail"></i>
@@ -849,8 +907,7 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>ladukaraniket@gmail.com		     
-			   </p>
+   			<p>ladukaraniket@gmail.com</p>
 
    		</div>
 
@@ -886,24 +943,19 @@
    <footer>
      	<div class="row">
 
-     		<div class="col-six tab-full pull-right social">
+     		<div class="col-seven tab-full  social">
 
      			<ul class="footer-social">        
-			      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-			      <li><a href="#"><i class="fab fa-behance"></i></a></li>
-			      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-			      <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-			      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			      
+				  <li><a target="_blank" href="https://www.linkedin.com/in/ladukaraniket/"><i class="fab  fa-linkedin"></i></a><p class="slc"></p></li>
+				  <li><a target="_blank" href="https://www.hackerrank.com/ladukaraniket"><i class="fab  fa-hackerrank"></i></a><p class="slc"></p></li>
+				  <li><a target="_blank" href="https://github.com/ladukaraniket"><i class="fab  fa-github"></i></a><p class="slc"></p></li>
+				  <li><a target="_blank" href="#"><i class="fas  fa-file-invoice"></i></a><p class="slc"></p></li>
 			   </ul> 
 	      		
 	      </div>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Kards 2016.</span> 
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
-		         </div>		                  
-	      	</div>
+      	
 
 	      	<div id="go-top">
 		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-long-arrow-alt-up"></i></a>

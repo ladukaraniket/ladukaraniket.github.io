@@ -424,7 +424,7 @@ textarea {
 }
 
 [class*="col-"] {
-	padding: 0 20px;
+	padding: 0 15px;
 }
 
 .col-one {
@@ -456,7 +456,7 @@ textarea {
 }
 
 .col-seven {
-	width: 58.33333%;
+	width: 100%;
 }
 
 .col-eight,
