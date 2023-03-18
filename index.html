@@ -610,9 +610,11 @@
 
     <script src="contactform/contactform.js"></script>
     <script>
-        const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        const randomColor1 = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        const randomColor2 = "#" + ((1 << 24) * Math.random() | 0).toString(16);
 
-        document.documentElement.style.setProperty('--base-color', randomColor);
+        document.documentElement.style.setProperty('--base-color', randomColor1);
+        document.documentElement.style.setProperty('--base-color-2', randomColor2);
     </script>
 </body>
 
