@@ -1,13 +1,14 @@
 /* ==========================================================================
-   Theme Playground - Development-only Theme Switcher Panel
+   Theme Playground - Theme Switcher Panel
    ========================================================================== */
 
 /*
-   To hide in production:
-   1. Add display: none to .theme-playground
-   2. Or remove the playground HTML and JS entirely
+   Hidden by default in production.
+   Press Alt+P to toggle visibility.
+   When hidden, localStorage is cleared and random theme rotation resumes on refresh.
 */
 
+/* Hidden by default in production - use Alt+P to show */
 .theme-playground {
   position: fixed;
   bottom: 20px;
@@ -15,6 +16,12 @@
   z-index: 9999;
   font-family: var(--font-mono);
   font-size: 12px;
+  display: none;
+}
+
+/* Visible state - toggled via Alt+P */
+.theme-playground.visible {
+  display: block;
 }
 
 .playground-toggle {
@@ -185,9 +192,3 @@
   }
 }
 
-/* Production mode - uncomment to hide */
-/*
-.theme-playground {
-  display: none !important;
-}
-*/

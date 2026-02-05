@@ -191,5 +191,26 @@ document.addEventListener('keydown', (e) => {
       if (vibeSelect) vibeSelect.value = nextVibe;
       console.log(`Vibe: ${nextVibe}`);
       break;
+
+    // Alt + P: Toggle playground visibility (show/hide)
+    case 'p':
+    case 'P':
+      e.preventDefault();
+      const playground = document.querySelector('.theme-playground');
+      if (!playground) break;
+
+      const isVisible = playground.classList.contains('visible');
+
+      if (isVisible) {
+        // Hiding playground - clear localStorage to resume random rotation
+        localStorage.removeItem('themePrefs');
+        playground.classList.remove('visible');
+        console.log('Playground hidden. Theme prefs cleared - random rotation will resume on refresh.');
+      } else {
+        // Showing playground - enter testing mode
+        playground.classList.add('visible');
+        console.log('Playground visible. Use Alt+P to hide and clear prefs.');
+      }
+      break;
   }
 });
