@@ -658,10 +658,102 @@ section {
 }
 
 /* --------------------------------------------------------------------------
+   Projects Section
+   -------------------------------------------------------------------------- */
+.projects {
+  background-color: var(--bg-secondary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-org {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--accent);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.project-highlights {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-highlights ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.project-highlights li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.tech-tag {
+  padding: 0.35rem 0.75rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
    Contact Section
    -------------------------------------------------------------------------- */
 .contact {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   text-align: center;
 }
 
@@ -894,5 +986,13 @@ section {
 
   .education-card {
     padding: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
