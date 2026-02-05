@@ -2,64 +2,6 @@
    Main JavaScript - Core Interactions and Animations
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   Production Theme Rotation - Curated 30 combinations
-   -------------------------------------------------------------------------- */
-const PRODUCTION_THEMES = [
-  // Combined (4)
-  { vibe: 'combined', accent: 'coral', theme: 'dark' },
-  { vibe: 'combined', accent: 'violet', theme: 'dark' },
-  { vibe: 'combined', accent: 'coral', theme: 'midnight' },
-  { vibe: 'combined', accent: 'emerald', theme: 'midnight' },
-
-  // Bold (6)
-  { vibe: 'bold', accent: 'coral', theme: 'dark' },
-  { vibe: 'bold', accent: 'emerald', theme: 'dark' },
-  { vibe: 'bold', accent: 'gold', theme: 'dark' },
-  { vibe: 'bold', accent: 'emerald', theme: 'midnight' },
-  { vibe: 'bold', accent: 'gold', theme: 'midnight' },
-  { vibe: 'bold', accent: 'coral', theme: 'midnight' },
-
-  // Playful (5)
-  { vibe: 'playful', accent: 'coral', theme: 'dark' },
-  { vibe: 'playful', accent: 'gold', theme: 'dark' },
-  { vibe: 'playful', accent: 'coral', theme: 'midnight' },
-  { vibe: 'playful', accent: 'gold', theme: 'midnight' },
-  { vibe: 'playful', accent: 'violet', theme: 'midnight' },
-
-  // Terminal (2)
-  { vibe: 'terminal', accent: 'gold', theme: 'dark' },
-  { vibe: 'terminal', accent: 'coral', theme: 'dark' },
-
-  // Glass (7)
-  { vibe: 'glass', accent: 'coral', theme: 'dark' },
-  { vibe: 'glass', accent: 'emerald', theme: 'dark' },
-  { vibe: 'glass', accent: 'violet', theme: 'dark' },
-  { vibe: 'glass', accent: 'gold', theme: 'dark' },
-  { vibe: 'glass', accent: 'coral', theme: 'midnight' },
-  { vibe: 'glass', accent: 'emerald', theme: 'midnight' },
-  { vibe: 'glass', accent: 'gold', theme: 'midnight' },
-
-  // Editorial (6)
-  { vibe: 'editorial', accent: 'emerald', theme: 'dark' },
-  { vibe: 'editorial', accent: 'coral', theme: 'dark' },
-  { vibe: 'editorial', accent: 'gold', theme: 'dark' },
-  { vibe: 'editorial', accent: 'emerald', theme: 'midnight' },
-  { vibe: 'editorial', accent: 'coral', theme: 'midnight' },
-  { vibe: 'editorial', accent: 'gold', theme: 'midnight' },
-];
-
-// Initialize random production theme (runs immediately to prevent flash)
-(function initProductionTheme() {
-  // Skip if localStorage has saved preferences (testing mode via playground)
-  if (localStorage.getItem('themePrefs')) return;
-
-  const randomTheme = PRODUCTION_THEMES[Math.floor(Math.random() * PRODUCTION_THEMES.length)];
-  document.documentElement.setAttribute('data-theme', randomTheme.theme);
-  document.documentElement.setAttribute('data-accent', randomTheme.accent);
-  document.documentElement.setAttribute('data-vibe', randomTheme.vibe);
-})();
-
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initScrollAnimations();

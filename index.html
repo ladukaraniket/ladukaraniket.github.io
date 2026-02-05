@@ -3,6 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Immediate theme initialization (runs before CSS loads to prevent flash) -->
+  <script>
+    (function() {
+      if (localStorage.getItem('themePrefs')) return;
+      var themes = [
+        {v:'combined',a:'coral',t:'dark'},{v:'combined',a:'violet',t:'dark'},
+        {v:'combined',a:'coral',t:'midnight'},{v:'combined',a:'emerald',t:'midnight'},
+        {v:'bold',a:'coral',t:'dark'},{v:'bold',a:'emerald',t:'dark'},
+        {v:'bold',a:'gold',t:'dark'},{v:'bold',a:'emerald',t:'midnight'},
+        {v:'bold',a:'gold',t:'midnight'},{v:'bold',a:'coral',t:'midnight'},
+        {v:'playful',a:'coral',t:'dark'},{v:'playful',a:'gold',t:'dark'},
+        {v:'playful',a:'coral',t:'midnight'},{v:'playful',a:'gold',t:'midnight'},
+        {v:'playful',a:'violet',t:'midnight'},{v:'terminal',a:'gold',t:'dark'},
+        {v:'terminal',a:'coral',t:'dark'},{v:'glass',a:'coral',t:'dark'},
+        {v:'glass',a:'emerald',t:'dark'},{v:'glass',a:'violet',t:'dark'},
+        {v:'glass',a:'gold',t:'dark'},{v:'glass',a:'coral',t:'midnight'},
+        {v:'glass',a:'emerald',t:'midnight'},{v:'glass',a:'gold',t:'midnight'},
+        {v:'editorial',a:'emerald',t:'dark'},{v:'editorial',a:'coral',t:'dark'},
+        {v:'editorial',a:'gold',t:'dark'},{v:'editorial',a:'emerald',t:'midnight'},
+        {v:'editorial',a:'coral',t:'midnight'},{v:'editorial',a:'gold',t:'midnight'}
+      ];
+      var r = themes[Math.floor(Math.random() * themes.length)];
+      document.documentElement.setAttribute('data-theme', r.t);
+      document.documentElement.setAttribute('data-accent', r.a);
+      document.documentElement.setAttribute('data-vibe', r.v);
+    })();
+  </script>
+
   <title>Aniket Ladukar | Full Stack Developer</title>
   <meta name="description" content="Aniket Ladukar - Full Stack Developer and ML Enthusiast. Building beautiful interfaces and solving complex problems.">
   <meta name="author" content="Aniket Mohan Ladukar">
