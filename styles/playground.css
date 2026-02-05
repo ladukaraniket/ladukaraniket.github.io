@@ -1,0 +1,193 @@
+/* ==========================================================================
+   Theme Playground - Development-only Theme Switcher Panel
+   ========================================================================== */
+
+/*
+   To hide in production:
+   1. Add display: none to .theme-playground
+   2. Or remove the playground HTML and JS entirely
+*/
+
+.theme-playground {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.playground-toggle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.playground-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+.playground-panel {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 260px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.playground-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.playground-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.playground-header span:first-child {
+  font-size: 16px;
+}
+
+.playground-group {
+  margin-bottom: 16px;
+}
+
+.playground-group:last-child {
+  margin-bottom: 0;
+}
+
+.playground-label {
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 10px;
+}
+
+.playground-select {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.playground-select:hover {
+  border-color: var(--accent);
+}
+
+.playground-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-subtle);
+}
+
+/* Color preview swatches */
+.color-preview {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.15);
+}
+
+.color-swatch.active {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px var(--bg-secondary), 0 0 0 4px var(--text-primary);
+}
+
+.color-swatch[data-accent="blue"] { background: #0066FF; }
+.color-swatch[data-accent="coral"] { background: #FF6B4A; }
+.color-swatch[data-accent="emerald"] { background: #10B981; }
+.color-swatch[data-accent="gray"] { background: #6B7280; }
+.color-swatch[data-accent="violet"] { background: #8B5CF6; }
+.color-swatch[data-accent="gold"] { background: #F59E0B; }
+
+/* Combination counter */
+.playground-counter {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.playground-counter strong {
+  color: var(--accent);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .theme-playground {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .playground-panel {
+    min-width: 240px;
+    right: -10px;
+  }
+
+  .playground-toggle {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Production mode - uncomment to hide */
+/*
+.theme-playground {
+  display: none !important;
+}
+*/

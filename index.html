@@ -1,733 +1,453 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
+<html lang="en" data-theme="dark" data-accent="blue" data-vibe="combined">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniket Ladukar | Full Stack Developer</title>
+  <meta name="description" content="Aniket Ladukar - Full Stack Developer and ML Enthusiast. Building beautiful interfaces and solving complex problems.">
+  <meta name="author" content="Aniket Mohan Ladukar">
 
-    <!--- basic page needs
-   ================================================== -->
-    <meta charset="utf-8">
-    <title>Aniket Ladukar</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- mobile specific metas
-   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=VT323&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/themes.css">
+  <link rel="stylesheet" href="styles/vibes.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/playground.css">
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate-css/animate.min.css" rel="stylesheet">
-
-    <!-- CSS
-   ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="/Kards10/css/all.css">
-
-    <!-- script
-   ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-	================================================== -->
-    <link rel="icon" type="image/png" href="favicon.png">
-
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Aniket Ladukar | Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer and ML Enthusiast. Building beautiful interfaces and solving complex problems.">
+  <meta property="og:type" content="website">
 </head>
+<body>
 
-<body id="top">
-
-
-    <!--==========================
-  Header Section
-  ============================-->
-    <header id="header">
-        <div class="container">
-
-            <div id="logo" class="pull-left">
-                <a href="#hero"></a>
-                <!-- Uncomment below if you prefer to use a text image -->
-                <!-- <h1><a href="#hero">Header 1</a></h1> -->
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-                    <li><a class="smoothscroll" href="#about" title="">About</a></li>
-                    <li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
-                    <!-- <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-                    <li><a class="smoothscroll" href="#services" title="">Services</a></li> -->
-                    <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- #nav-menu-container -->
-        </div>
-    </header>
-    <!-- #header -->
-
-
-
-    <!-- intro section
-   ================================================== -->
-    <section id="intro">
-
-        <div class="intro-overlay"></div>
-
-        <div class="intro-content">
-            <div class="row">
-
-                <div class="col-twelve">
-
-                    <h5>Hello, World.</h5>
-                    <h1>I'm Aniket Ladukar.</h1>
-
-                    <p class="intro-position">
-                        <span>Full Stack Developer</span>
-                        <span>Programmer, ML enthusiast</span>
-                    </p>
-
-                    <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
-                </div>
-
-            </div>
-        </div>
-        <!-- /intro-content -->
-
-        <ul class="intro-social">
-            <li><a target="_blank" href="https://www.linkedin.com/in/ladukaraniket/"><i class="fab fa-2x fa-linkedin"></i></a>
-                <p class="slc">LinkedIn</p>
-            </li>
-            <li><a target="_blank" href="https://www.hackerrank.com/ladukaraniket"><i class="fab fa-2x fa-hackerrank"></i></a>
-                <p class="slc">HackerRank</p>
-            </li>
-            <li><a target="_blank" href="https://github.com/ladukaraniket"><i class="fab fa-2x fa-github"></i></a>
-                <p class="slc">GitHub</p>
-            </li>
-            <li><a target="_blank" href="./assets/Resume.pdf"><i class="fas fa-2x fa-file-invoice"></i></a>
-                <p class="slc">Resume</p>
-            </li>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">AL</a>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <!-- /intro-social -->
-
-    </section>
-    <!-- /intro -->
-
-
-    <!-- about section
-   ================================================== -->
-    <section id="about">
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>About</h5>
-                <h1>Let me introduce myself.</h1>
-
-                <div class="intro-info">
-
-                    <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-
-                    <p class="lead" style="text-align: justify;">Hello, my name is Aniket Ladukar and I'm an enthusiastic full stack web developer from India. My passion for software development is in line with my love for problem solving and experimenting with new concepts and turning them into
-                        reality through beautiful interfaces. I am also interested in understanding and learning about the amalgamation of machine learning and software engineering.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <!-- /section-intro -->
-
-        <div class="row about-content">
-
-            <div class="col-six tab-full">
-
-                <h3>Profile</h3>
-                <!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
-
-                <ul class="info-list">
-                    <li>
-                        <strong>Fullname:</strong>
-                        <span>Aniket Mohan Ladukar</span>
-                    </li>
-                    <li>
-                        <strong>Birth Date:</strong>
-                        <span>October 09, 1997</span>
-                    </li>
-
-                    <li>
-                        <strong>Email:</strong>
-                        <span>aniket.ladukar@gmail.com</span>
-                    </li>
-
-                </ul>
-                <!-- /info-list -->
-
-            </div>
-
-            <div class="col-six tab-full">
-
-                <h3>Skills</h3>
-                <!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
-
-                <ul class="skills-list" style="list-style: none;">
-                    <li>
-                        <h5 class="skill-title">Languages</h5>
-                        <div class="skill-badges-container">
-                            <img alt="java" src="https://img.shields.io/badge/-Java-444?&logo=Java&logoColor=FF0000" height="23px" />
-                            <img alt="typescript" src="https://img.shields.io/badge/-Typescript-444?&logo=Typescript&logoColor=2496ED" height="23px" />
-                            <img alt="javascript" src="https://img.shields.io/badge/-Javascript-444?&logo=javascript" height="23px" />
-                            <img alt="python" src="https://img.shields.io/badge/-Python-444?&logo=python&logoColor=2496ED" height="23px" />
-                            <img alt="html" src="https://img.shields.io/badge/-Html-444?&logo=Html5" height="23px" />
-                            <img alt="css" src="https://img.shields.io/badge/-CSS-444?&logo=Css3&logoColor=2496ED" height="23px" />
-                            <img alt="go" src="https://img.shields.io/badge/-GO-444?&logo=go&logoColor=007ACC&logoColor=2496ED" height="23px" />
-                        </div>
-                    </li>
-                    <li>
-                        <h5 class="skill-title">Frameworks/Libraries</h5>
-                        <div class="skill-badges-container">
-                            <img alt="reactjs" src="https://img.shields.io/badge/-React-444?&logo=react" height="23px" />
-                            <img alt="spring" src="https://img.shields.io/badge/-Spring%20Boot-444?logo=Spring" height="23px" />
-                            <img alt="nodejs" src="https://img.shields.io/badge/-Nodejs-444?&logo=node.js" height="23px" />
-                        </div>
-                    </li>
-                    <li>
-                        <h5 class="skill-title">Database</h5>
-                        <div class="skill-badges-container">
-                            <img alt="mongodb" src="https://img.shields.io/badge/-MongoDB-444?&logo=MongoDB" height="23px" />
-                            <img alt="mysql" src="https://img.shields.io/badge/-MySQL-444?&logo=MySQL&logoColor=2496ED" height="23px" />
-                        </div>
-                    </li>
-                    <li>
-                        <h5 class="skill-title">Hosting/SaaS</h5>
-                        <div class="skill-badges-container">
-                            <img alt="docker" src="https://img.shields.io/badge/-Docker-444?&logo=docker" height="23px" />
-                            <img alt="kubernetes" src="https://img.shields.io/badge/-Kubernetes-444?&logo=kubernetes" height="23px" />
-                        </div>
-                    </li>
-                    <li>
-                        <h5 class="skill-title">Tools</h5>
-                        <div class="skill-badges-container">
-                            <img alt="vscode" src="https://img.shields.io/badge/-VSCode-444?&logo=visual-studio-code&logoColor=007ACC" height="23px" />
-                            <img alt="git" src="https://img.shields.io/badge/-git-444?&logo=Git" height="23px" />
-                        </div>
-                    </li>
-
-                </ul>
-                <!-- /skill-bars -->
-
-            </div>
-
-        </div>
-
-        <div class="row button-section">
-            <div class="col-twelve">
-                <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-                <a href="./assets/Resume.pdf" target="_blank" title="Download CV" class="button button-primary">Download CV</a>
-            </div>
-        </div>
-
-    </section>
-    <!-- /process-->
-
-
-    <!-- resume Section
-   ================================================== -->
-    <section id="resume" class="grey-section">
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Resume</h5>
-                <h1>More of my credentials.</h1>
-
-
-            </div>
-        </div>
-        <!-- /section-intro-->
-
-        <div class="creds-container">
-
-
-            <!-- Work Experience -->
-            <div class="row resume-timeline">
-
-                <div class="col-twelve resume-header">
-
-                    <h2>Work Experience</h2>
-
-                </div>
-                <!-- /resume-header -->
-
-                <!-- SS8 Inc Internship -->
-                <div class="col-twelve">
-
-                    <div class="timeline-wrap">
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Software Engineering Intern</h3>
-                                <p>Aug 2024 - Present</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>SS8 Networks, Inc</h4>
-                                <p>
-                                    <ul>
-                                        <li style="text-align: justify;">
-                                            Used Kafka producers and consumers to integrate Ingestion service and Media service to enable conversion of ingested events to wavfile.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Implemented audio streaming via WebSocket with instant seeking to any timestamp, enabling precise control and minimal buffering
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Streamlined deployment by configuring Helm charts and ConfigMaps, reducing service installation time on Kubernetes Cluster by 40%.
-                                        </li>
-                                    </ul> 
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                    </div>
-                    <!-- /timeline-wrap -->
-
-                </div>
-
-                <!-- ISI Ltd -->
-                <div class="col-twelve">
-
-                    <div class="timeline-wrap">
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Frontend Engineer</h3>
-                                <p>May 2023 - Aug 2024</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>Information Sciences Institute, USC</h4>
-                                <p>
-                                    <ul>
-                                        <li style="text-align: justify;">
-                                            Developed and maintained a Reactjs based front-end component for the DERIVA asset management platform.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Incorporated array inputs to existing forms using react-beautiful-dnd, resulting in a 70% improvement in data ingestion efficiency.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Migrate existing products GUDMAP and Rebuilding a Kidney into a unified product Atlas D2K, resulting in a 30% improvement in user experience and a 40% increase in codebase efficiency.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Containerized test suite using docker with support for headful testing, replacing third party services and saving $150 per month.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Migrated image processing pipeline to AWS to achieve a 50% reduction in operational cost.
-                                        </li>
-                                        <li style="text-align: justify;">
-                                            Mentored junior developers, providing guidance and support to improve the codebase, leading to faster project completion times.
-                                        </li>
-
-                                    </ul> 
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                    </div>
-                    <!-- /timeline-wrap -->
-
-                </div>
-                <!-- /col-twelve -->
-
-                <!-- Infosys Ltd -->
-                <div class="col-twelve">
-
-                    <div class="timeline-wrap">
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Full Stack Developer</h3>
-                                <p>Nov 2020 - Dec 2022</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>Infosys Ltd.</h4>
-                                <p>
-                                    <div class="kubernetes-controller-container">
-                                        <h5>Kubernetes Controller</h5>
-                                        <ul>
-                                            <li style="text-align: justify;">
-                                                Solely Designed and Developed a Kubernetes Controller to assist end-user by automating and simplifying the process of installing and configuring monitoring dashboard on the K8S cluster deployed in a air-gapped environment.
-                                            </li>
-                                            <li style="text-align: justify;">
-                                                Developed end to end UI and backend microservices and APIs in ReactJs and Spring Boot respectively
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="data-delivery-platform-container">
-                                        <h5>Data Delivery Platform</h5>
-                                        <ul>
-                                            <li style="text-align: justify;">
-                                                Developed the UI for a Data Delivery Platform using ReactJS along with BluprintJs, Ag-grid and redux.
-                                            </li>
-                                            <li style="text-align: justify;">
-                                                Responsible for creating workflows to build and deploy the UI and backend microservices in a containerized environment using Docker and Docker Compose
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="single-sign-on-container">
-                                        <h5>Single Sign On Service</h5>
-                                        <ul>
-                                            <li style="text-align: justify;">
-                                                Developed UI for a single sign-on solution to enable seamless authentication and authorization across client's entire product suite.
-                                            </li>
-                                            <li style="text-align: justify;">
-                                                Responsible to modify and update exisiting products to support SSO and provide an option to seamlessly switch between products based on enabled licenses.
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                    </div>
-                    <!-- /timeline-wrap -->
-
-                </div>
-                <!-- /col-twelve -->
-
-                <!-- Bhaktivedanta Hospital -->
-                <div class="col-twelve">
-
-                    <div class="timeline-wrap">
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Data Analytics Intern</h3>
-                                <p>June 2018</p>
-                            </div>
-
-                            <div class="timeline-content" style="text-align: justify;">
-                                <h4>Bhaktivedanta Hospital and Research Institute</h4>
-                                <p>Worked on the Development of the Intranet Portal using G Suite. Portal included automatic Daily Report Generation with the use of Supermetrics and SQL.</p>
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                    </div>
-                    <!-- /timeline-wrap -->
-
-                </div>
-                <!-- /col-twelve -->
-
-            </div>
-            <!-- /resume-timeline -->
-
-            <div class="creds-divider"></div>
-
-            <!-- Education -->
-            <div class="row resume-timeline">
-
-                <div class="col-twelve resume-header">
-
-                    <h2>Education</h2>
-
-                </div>
-                <!-- /resume-header -->
-
-                <div class="col-twelve">
-
-                    <div class="timeline-wrap">
-
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-university"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Master of Science</h3>
-                                <h6>Computer Science</h6>
-                                <p>Jan 2023 - Dec 2024</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>University of Southern California</h4>
-                                <b>Cumulative GPA - 3.71 / 4.0</b>
-                                <p>Courses taken :
-                                    <ul>
-                                        <li >
-                                            CSCI 567 - Machine Learning
-                                        </li>
-                                        <li >
-                                            CSCI 570 - Analysis of Algorithms
-                                        </li>
-                                        <br>
-                                        <li >
-                                            CSCI 585 - Database Systems
-                                        </li>
-                                        <li >
-                                            CSCI 576 - Multimedia Systems Design
-                                        </li>
-                                        <br>
-                                        <li >
-                                            CSCI 566 - Deep Learning and its Applications
-                                        </li>
-                                        <li >
-                                            CSCI 572 - Information Retrieval and Web Search Engines
-                                        </li>
-
-                                    </ul>
-
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>Bachelor of Engineering</h3>
-                                <h6>Information Technology</h6>
-                                <p>July 2016 - May 2020</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>University of Mumbai</h4>
-                                <p>
-                                <b>Cumulative GPA - 9.1 / 10</b><br>
-                                Pursued Engineering in the field of Information Technology. <br> 
-                                Part of the Following Committees:<br> 
-                                ISTE - Tech Head<br> 
-                                ACM - Tech Head<br> 
-                                EWT - Volunteer<br>
-                                    </p>
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-school"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>HSC</h3>
-                                <p>June 2014 - May 2016</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>Shubham Raje Jr. College</h4>
-                                <p>Opted for Information Technology as an elective.<br>
-                                    <b>Overall Score - 83.69%</b>
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-
-                        <div class="timeline-block">
-
-                            <div class="timeline-ico">
-                                <i class="fa fa-school"></i>
-                            </div>
-
-                            <div class="timeline-header">
-                                <h3>ICSE</h3>
-                                <p>June 2009 - May 2014</p>
-                            </div>
-
-                            <div class="timeline-content">
-                                <h4>Smt. Sulochanadevi Singhania School</h4>
-                                <p>Chose Computer Applications as the elective.<br>
-                                    <b>Overall Score - 95.6%</b>
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- /timeline-block -->
-
-                    </div>
-                    <!-- /timeline-wrap -->
-
-                </div>
-                <!-- /col-twelve -->
-
-            </div>
-
-        </div>
-        <!-- /resume-timeline -->
-
-    </section>
-    <!-- /features -->
-
-
-    <!-- Portfolio Section
-   ================================================== -->
-
-    <!-- /portfolio -->
-
-
-
-
-
-    <!-- services Section
-   ================================================== -->
-
-    <!-- /services -->
-
-
-    <!-- stats Section
-   ================================================== -->
-
-    <!-- /stats -->
-
-
-    <!-- contact
-   ================================================== -->
-    <section id="contact">
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Contact</h5>
-
-
-                <div class="row contact-info">
-
-
-
-                    <div class="tab-full ">
-
-                        <div class="icon">
-                            <i class="icon-mail"></i>
-                        </div>
-
-                        <h5>Email Me At</h5>
-
-                        <p>aniket.ladukar@gmail.com</p>
-
-                    </div>
-
-
-                </div>
-                <!-- /contact-info -->
-
-    </section>
-    <!-- /contact -->
-
-
-    <!-- footer
-   ================================================== -->
-
-    <footer>
-        <div class="row">
-
-            <div class="col-seven tab-full  social">
-
-                <ul class="footer-social">
-
-                    <li><a target="_blank" href="https://www.linkedin.com/in/ladukaraniket/"><i class="fab  fa-linkedin"></i></a>
-                        <p class="slc"></p>
-                    </li>
-                    <li><a target="_blank" href="https://www.hackerrank.com/ladukaraniket"><i class="fab  fa-hackerrank"></i></a>
-                        <p class="slc"></p>
-                    </li>
-                    <li><a target="_blank" href="https://github.com/ladukaraniket"><i class="fab  fa-github"></i></a>
-                        <p class="slc"></p>
-                    </li>
-                    <li><a target="_blank" href="./assets/Resume.pdf"><i class="fas  fa-file-invoice"></i></a>
-                        <p class="slc"></p>
-                    </li>
-                </ul>
-
-            </div>
-
-
-
-            <div id="go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-long-arrow-alt-up"></i></a>
-            </div>
-
-        </div>
-        <!-- /row -->
-    </footer>
-
-    <div id="preloader">
-        <div id="loader"></div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
+  </nav>
 
-    <!-- Java Script
-   ================================================== -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-greeting reveal">Hello, World.</span>
+        <h1 class="hero-name reveal">
+          <span>Aniket</span><br>
+          <span>Ladukar</span>
+        </h1>
+        <p class="hero-title reveal">Full Stack Developer & ML Enthusiast</p>
+        <p class="hero-description reveal">
+          Passionate about building beautiful interfaces, solving complex problems, and exploring the intersection of machine learning and software engineering.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="./assets/Resume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+        </div>
+        <div class="hero-social reveal">
+          <a href="https://www.linkedin.com/in/ladukaraniket/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://www.hackerrank.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701a.257.257 0 0 0 .181-.076.26.26 0 0 0 .076-.182V6.65a.257.257 0 0 0-.258-.258h-2.11c-.072 0-.14.029-.191.08a.262.262 0 0 0-.066.178v.001a.257.257 0 0 0 .257.258h.702v10.037h-.702a.257.257 0 0 0-.257.258v.001c0 .07.029.139.08.19a.26.26 0 0 0 .178.067h2.11a.257.257 0 0 0 .257-.258v-.002a.257.257 0 0 0-.257-.256h-.701v-5.467h4.074v5.318h-.702a.257.257 0 0 0-.256.258v.001c0 .07.029.14.08.19a.26.26 0 0 0 .178.068h2.108a.256.256 0 0 0 .256-.258v-.001a.257.257 0 0 0-.256-.258h-.703V7.058a.257.257 0 0 0-.076-.182.257.257 0 0 0-.18-.076z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+    </div>
+  </section>
 
-    <!-- Required JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/morphext/morphext.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image">
+            <img src="images/profile-pic.jpg" alt="Aniket Ladukar" loading="lazy">
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-header">
+            <span class="section-label reveal">About Me</span>
+            <h2 class="reveal reveal-delay-1">Building digital experiences with passion and precision</h2>
+          </div>
+          <div class="about-text">
+            <p class="lead reveal reveal-delay-2">
+              Hello, my name is Aniket Ladukar and I'm an enthusiastic full stack web developer from India. My passion for software development aligns with my love for problem solving and experimenting with new concepts, turning them into reality through beautiful interfaces.
+            </p>
+            <p class="reveal reveal-delay-3">
+              I am also interested in understanding and learning about the amalgamation of machine learning and software engineering. I believe in writing clean, efficient code and creating intuitive user experiences.
+            </p>
+          </div>
+          <div class="about-details reveal reveal-delay-4">
+            <div class="about-detail">
+              <span class="about-detail-label">Full Name</span>
+              <span class="about-detail-value">Aniket Mohan Ladukar</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Email</span>
+              <span class="about-detail-value">aniket.ladukar@gmail.com</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Location</span>
+              <span class="about-detail-value">United States</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Availability</span>
+              <span class="about-detail-value">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="lib/easing/easing.js"></script>
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Career</span>
+        <h2 class="reveal reveal-delay-1">Work Experience</h2>
+      </div>
+      <div class="experience-list">
+        <!-- SS8 Networks -->
+        <article class="experience-item reveal">
+          <div class="experience-date">Aug 2024 - Present</div>
+          <div class="experience-content">
+            <h3>Software Engineering Intern</h3>
+            <p class="experience-company">SS8 Networks, Inc</p>
+            <div class="experience-description">
+              <ul>
+                <li>Used Kafka producers and consumers to integrate Ingestion service and Media service to enable conversion of ingested events to wavfile.</li>
+                <li>Implemented audio streaming via WebSocket with instant seeking to any timestamp, enabling precise control and minimal buffering.</li>
+                <li>Streamlined deployment by configuring Helm charts and ConfigMaps, reducing service installation time on Kubernetes Cluster by 40%.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
 
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
+        <!-- USC ISI -->
+        <article class="experience-item reveal">
+          <div class="experience-date">May 2023 - Aug 2024</div>
+          <div class="experience-content">
+            <h3>Frontend Engineer</h3>
+            <p class="experience-company">Information Sciences Institute, USC</p>
+            <div class="experience-description">
+              <ul>
+                <li>Developed and maintained a React.js based front-end component for the DERIVA asset management platform.</li>
+                <li>Incorporated array inputs to existing forms using react-beautiful-dnd, resulting in a 70% improvement in data ingestion efficiency.</li>
+                <li>Migrated existing products GUDMAP and Rebuilding a Kidney into a unified product Atlas D2K, resulting in a 30% improvement in user experience and a 40% increase in codebase efficiency.</li>
+                <li>Containerized test suite using Docker with support for headful testing, replacing third party services and saving $150 per month.</li>
+                <li>Migrated image processing pipeline to AWS to achieve a 50% reduction in operational cost.</li>
+                <li>Mentored junior developers, providing guidance and support to improve the codebase, leading to faster project completion times.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
 
-    <script src="contactform/contactform.js"></script>
-    <script>
-        const randomColor1 = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-        const randomColor2 = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        <!-- Infosys -->
+        <article class="experience-item reveal">
+          <div class="experience-date">Nov 2020 - Dec 2022</div>
+          <div class="experience-content">
+            <h3>Full Stack Developer</h3>
+            <p class="experience-company">Infosys Ltd.</p>
+            <div class="experience-description">
+              <p><strong>Kubernetes Controller</strong></p>
+              <ul>
+                <li>Solely Designed and Developed a Kubernetes Controller to assist end-users by automating and simplifying the process of installing and configuring monitoring dashboard on K8S clusters deployed in air-gapped environments.</li>
+                <li>Developed end-to-end UI and backend microservices and APIs in React.js and Spring Boot respectively.</li>
+              </ul>
+              <p style="margin-top: 1rem;"><strong>Data Delivery Platform</strong></p>
+              <ul>
+                <li>Developed the UI for a Data Delivery Platform using React.js along with BlueprintJs, Ag-grid and Redux.</li>
+                <li>Responsible for creating workflows to build and deploy the UI and backend microservices in a containerized environment using Docker and Docker Compose.</li>
+              </ul>
+              <p style="margin-top: 1rem;"><strong>Single Sign-On Service</strong></p>
+              <ul>
+                <li>Developed UI for a single sign-on solution to enable seamless authentication and authorization across client's entire product suite.</li>
+                <li>Responsible to modify and update existing products to support SSO and provide an option to seamlessly switch between products based on enabled licenses.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
 
-        document.documentElement.style.setProperty('--base-color', randomColor1);
-        document.documentElement.style.setProperty('--base-color-2', randomColor2);
-    </script>
+        <!-- Bhaktivedanta Hospital -->
+        <article class="experience-item reveal">
+          <div class="experience-date">June 2018</div>
+          <div class="experience-content">
+            <h3>Data Analytics Intern</h3>
+            <p class="experience-company">Bhaktivedanta Hospital and Research Institute</p>
+            <div class="experience-description">
+              <p>Worked on the Development of the Intranet Portal using G Suite. Portal included automatic Daily Report Generation with the use of Supermetrics and SQL.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Background</span>
+        <h2 class="reveal reveal-delay-1">Education</h2>
+      </div>
+      <div class="education-grid">
+        <!-- USC -->
+        <div class="education-card reveal">
+          <h3 class="education-degree">Master of Science</h3>
+          <p class="education-field">Computer Science</p>
+          <p class="education-school">University of Southern California</p>
+          <p class="education-date">Jan 2023 - Dec 2024</p>
+          <span class="education-gpa">GPA: 3.71 / 4.0</span>
+          <div class="education-courses">
+            <h4>Key Courses</h4>
+            <ul>
+              <li>Machine Learning</li>
+              <li>Analysis of Algorithms</li>
+              <li>Database Systems</li>
+              <li>Deep Learning</li>
+              <li>Information Retrieval</li>
+              <li>Multimedia Systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="education-card reveal reveal-delay-1">
+          <h3 class="education-degree">Bachelor of Engineering</h3>
+          <p class="education-field">Information Technology</p>
+          <p class="education-school">University of Mumbai</p>
+          <p class="education-date">July 2016 - May 2020</p>
+          <span class="education-gpa">GPA: 9.1 / 10</span>
+          <div class="education-courses">
+            <h4>Activities</h4>
+            <ul>
+              <li>ISTE - Tech Head</li>
+              <li>ACM - Tech Head</li>
+              <li>EWT - Volunteer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Expertise</span>
+        <h2 class="reveal reveal-delay-1">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-1">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Express</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-2">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-3">
+          <h3>DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Kafka</span>
+            <span class="skill-tag">Helm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="section-header">
+          <span class="section-label reveal">Get In Touch</span>
+          <h2 class="reveal reveal-delay-1">Let's Work Together</h2>
+        </div>
+        <p class="contact-text reveal reveal-delay-2">
+          I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+        <a href="mailto:aniket.ladukar@gmail.com" class="contact-email reveal reveal-delay-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          aniket.ladukar@gmail.com
+        </a>
+        <div class="contact-social reveal reveal-delay-4">
+          <a href="https://www.linkedin.com/in/ladukaraniket/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://www.hackerrank.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701a.257.257 0 0 0 .181-.076.26.26 0 0 0 .076-.182V6.65a.257.257 0 0 0-.258-.258h-2.11c-.072 0-.14.029-.191.08a.262.262 0 0 0-.066.178v.001a.257.257 0 0 0 .257.258h.702v10.037h-.702a.257.257 0 0 0-.257.258v.001c0 .07.029.139.08.19a.26.26 0 0 0 .178.067h2.11a.257.257 0 0 0 .257-.258v-.002a.257.257 0 0 0-.257-.256h-.701v-5.467h4.074v5.318h-.702a.257.257 0 0 0-.256.258v.001c0 .07.029.14.08.19a.26.26 0 0 0 .178.068h2.108a.256.256 0 0 0 .256-.258v-.001a.257.257 0 0 0-.256-.258h-.703V7.058a.257.257 0 0 0-.076-.182.257.257 0 0 0-.18-.076z"/>
+            </svg>
+          </a>
+          <a href="./assets/Resume.pdf" target="_blank" aria-label="Resume">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-text">Designed & Built by Aniket Ladukar</p>
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Theme Playground (Development Mode) -->
+  <div class="theme-playground">
+    <button class="playground-toggle" aria-label="Theme settings">
+      <span>&#127912;</span>
+    </button>
+    <div class="playground-panel">
+      <div class="playground-header">
+        <span>&#127912;</span>
+        <span>Theme Playground</span>
+      </div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="theme-select">Base Theme</label>
+        <select id="theme-select" class="playground-select">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="midnight">Midnight</option>
+        </select>
+      </div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="accent-select">Accent Color</label>
+        <select id="accent-select" class="playground-select">
+          <option value="blue">Electric Blue</option>
+          <option value="coral">Warm Coral</option>
+          <option value="emerald">Emerald Green</option>
+          <option value="gray">Minimal Gray</option>
+          <option value="violet">Violet Purple</option>
+          <option value="gold">Sunset Gold</option>
+        </select>
+        <div class="color-preview">
+          <div class="color-swatch active" data-accent="blue" title="Electric Blue"></div>
+          <div class="color-swatch" data-accent="coral" title="Warm Coral"></div>
+          <div class="color-swatch" data-accent="emerald" title="Emerald Green"></div>
+          <div class="color-swatch" data-accent="gray" title="Minimal Gray"></div>
+          <div class="color-swatch" data-accent="violet" title="Violet Purple"></div>
+          <div class="color-swatch" data-accent="gold" title="Sunset Gold"></div>
+        </div>
+      </div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="vibe-select">Vibe</label>
+        <select id="vibe-select" class="playground-select">
+          <option value="combined">Combined (Default)</option>
+          <option value="bold">Bold</option>
+          <option value="clean">Clean</option>
+          <option value="playful">Playful</option>
+          <option value="brutalist">Brutalist</option>
+          <option value="terminal">Retro Terminal</option>
+          <option value="glass">Glassmorphism</option>
+          <option value="editorial">Editorial</option>
+        </select>
+      </div>
+
+      <div class="playground-counter">
+        <strong>144</strong> theme combinations available
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/theme-playground.js"></script>
+
 </body>
-
 </html>
