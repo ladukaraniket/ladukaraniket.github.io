@@ -584,11 +584,28 @@ section {
 }
 
 .education-card {
+  position: relative;
   background-color: var(--bg-primary);
   padding: 2.5rem;
   border-radius: 8px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
+}
+
+.education-logo {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  border-radius: 5%;
+}
+
+.education-card:hover .education-logo {
+  opacity: 1;
 }
 
 .education-card:hover {
@@ -1034,6 +1051,13 @@ section {
 
   .education-card {
     padding: 1.5rem;
+  }
+
+  .education-logo {
+    width: 40px;
+    height: 40px;
+    top: 1rem;
+    right: 1rem;
   }
 
   .project-card {
