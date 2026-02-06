@@ -8,6 +8,7 @@
   <script>
     (function() {
       if (localStorage.getItem('themePrefs')) return;
+      // Theme randomization
       var themes = [
         {v:'combined',a:'coral',t:'dark'},{v:'combined',a:'violet',t:'dark'},
         {v:'combined',a:'coral',t:'midnight'},{v:'combined',a:'emerald',t:'midnight'},
@@ -29,6 +30,14 @@
       document.documentElement.setAttribute('data-theme', r.t);
       document.documentElement.setAttribute('data-accent', r.a);
       document.documentElement.setAttribute('data-vibe', r.v);
+      // Hero randomization
+      var greetings = ['hello-world','console-log','print-py','sysout','hi-there','welcome'];
+      var effects = ['scramble','typewriter','none'];
+      var g = greetings[Math.floor(Math.random() * greetings.length)];
+      var e = effects[Math.floor(Math.random() * effects.length)];
+      document.documentElement.setAttribute('data-greeting', g);
+      document.documentElement.setAttribute('data-status', 'open'); // Static for production
+      document.documentElement.setAttribute('data-effect', e);
     })();
   </script>
 
@@ -94,7 +103,10 @@
         </p>
         <div class="hero-cta reveal">
           <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="./assets/Resume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+        </div>
+        <div class="hero-status reveal">
+          <span class="status-dot"></span>
+          <span class="status-text">Open to opportunities</span>
         </div>
         <div class="hero-social reveal">
           <a href="https://www.linkedin.com/in/ladukaraniket/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -107,11 +119,6 @@
           <a href="https://github.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-          </a>
-          <a href="https://www.hackerrank.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701a.257.257 0 0 0 .181-.076.26.26 0 0 0 .076-.182V6.65a.257.257 0 0 0-.258-.258h-2.11c-.072 0-.14.029-.191.08a.262.262 0 0 0-.066.178v.001a.257.257 0 0 0 .257.258h.702v10.037h-.702a.257.257 0 0 0-.257.258v.001c0 .07.029.139.08.19a.26.26 0 0 0 .178.067h2.11a.257.257 0 0 0 .257-.258v-.002a.257.257 0 0 0-.257-.256h-.701v-5.467h4.074v5.318h-.702a.257.257 0 0 0-.256.258v.001c0 .07.029.14.08.19a.26.26 0 0 0 .178.068h2.108a.256.256 0 0 0 .256-.258v-.001a.257.257 0 0 0-.256-.258h-.703V7.058a.257.257 0 0 0-.076-.182.257.257 0 0 0-.18-.076z"/>
             </svg>
           </a>
         </div>
@@ -500,20 +507,6 @@
               <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
             </svg>
           </a>
-          <a href="https://www.hackerrank.com/ladukaraniket" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701a.257.257 0 0 0 .181-.076.26.26 0 0 0 .076-.182V6.65a.257.257 0 0 0-.258-.258h-2.11c-.072 0-.14.029-.191.08a.262.262 0 0 0-.066.178v.001a.257.257 0 0 0 .257.258h.702v10.037h-.702a.257.257 0 0 0-.257.258v.001c0 .07.029.139.08.19a.26.26 0 0 0 .178.067h2.11a.257.257 0 0 0 .257-.258v-.002a.257.257 0 0 0-.257-.256h-.701v-5.467h4.074v5.318h-.702a.257.257 0 0 0-.256.258v.001c0 .07.029.14.08.19a.26.26 0 0 0 .178.068h2.108a.256.256 0 0 0 .256-.258v-.001a.257.257 0 0 0-.256-.258h-.703V7.058a.257.257 0 0 0-.076-.182.257.257 0 0 0-.18-.076z"/>
-            </svg>
-          </a>
-          <a href="./assets/Resume.pdf" target="_blank" aria-label="Resume">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-          </a>
         </div>
       </div>
     </div>
@@ -585,8 +578,43 @@
         </select>
       </div>
 
+      <!-- Hero Customization -->
+      <div class="playground-divider"></div>
+      <div class="playground-section-label">Hero</div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="greeting-select">Greeting</label>
+        <select id="greeting-select" class="playground-select">
+          <option value="hello-world">Hello, World.</option>
+          <option value="console-log">console.log('Hello');</option>
+          <option value="print-py">print("Hello")</option>
+          <option value="sysout">System.out.println("Hello");</option>
+          <option value="hi-there">Hi there.</option>
+          <option value="welcome">Welcome.</option>
+        </select>
+      </div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="status-select">Status Badge</label>
+        <select id="status-select" class="playground-select">
+          <option value="open">Open to opportunities</option>
+          <option value="connect">Let's connect</option>
+          <option value="building">Currently building</option>
+          <option value="none">Hidden</option>
+        </select>
+      </div>
+
+      <div class="playground-group">
+        <label class="playground-label" for="effect-select">Text Effect</label>
+        <select id="effect-select" class="playground-select">
+          <option value="scramble">Scramble</option>
+          <option value="typewriter">Typewriter</option>
+          <option value="none">None</option>
+        </select>
+      </div>
+
       <div class="playground-counter">
-        <strong>144</strong> theme combinations available
+        <strong>10,368</strong> combinations available
       </div>
     </div>
   </div>

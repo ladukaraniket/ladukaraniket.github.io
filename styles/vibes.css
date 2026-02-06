@@ -491,6 +491,10 @@
   margin-left: 0;
 }
 
+[data-vibe="brutalist"] .experience-item:first-child {
+  padding-top: 3rem;
+}
+
 [data-vibe="brutalist"] .nav-link::after {
   display: none;
 }
@@ -616,6 +620,7 @@
 [data-vibe="terminal"] .btn {
   border: 1px solid var(--accent);
   background: transparent;
+  color: var(--accent);
   position: relative;
   overflow: hidden;
 }
@@ -816,6 +821,10 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+[data-vibe="glass"] .experience-item:first-child {
+  padding-top: 2rem;
+}
+
 [data-vibe="glass"] .contact-email {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
@@ -894,6 +903,7 @@
   letter-spacing: -0.02em;
   line-height: 1;
   font-style: italic;
+  overflow: visible;
 }
 
 [data-vibe="editorial"] .hero-title {

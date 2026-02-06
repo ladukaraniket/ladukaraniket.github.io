@@ -69,6 +69,27 @@ function initThemePlayground() {
     });
   });
 
+  // Hero customization selects
+  const greetingSelect = document.getElementById('greeting-select');
+  const statusSelect = document.getElementById('status-select');
+  const effectSelect = document.getElementById('effect-select');
+
+  // Hero select handlers
+  greetingSelect?.addEventListener('change', (e) => {
+    setGreeting(e.target.value);
+    saveThemePreference('greeting', e.target.value);
+  });
+
+  statusSelect?.addEventListener('change', (e) => {
+    setStatus(e.target.value);
+    saveThemePreference('status', e.target.value);
+  });
+
+  effectSelect?.addEventListener('change', (e) => {
+    setEffect(e.target.value);
+    saveThemePreference('effect', e.target.value);
+  });
+
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
   }
@@ -79,6 +100,42 @@ function initThemePlayground() {
 
   function setVibe(vibe) {
     document.documentElement.setAttribute('data-vibe', vibe);
+  }
+
+  function setGreeting(greeting) {
+    document.documentElement.setAttribute('data-greeting', greeting);
+    // Re-apply hero customization
+    const status = document.documentElement.getAttribute('data-status') || 'open';
+    const effect = document.documentElement.getAttribute('data-effect') || 'scramble';
+    if (window.applyHeroCustomization) {
+      window.applyHeroCustomization(greeting, status, effect);
+    }
+  }
+
+  function setStatus(status) {
+    document.documentElement.setAttribute('data-status', status);
+    const statusEl = document.querySelector('.hero-status');
+    const statusText = document.querySelector('.status-text');
+    if (statusEl) {
+      if (status === 'none') {
+        statusEl.classList.add('hidden');
+      } else {
+        statusEl.classList.remove('hidden');
+        if (statusText && window.STATUSES) {
+          statusText.textContent = window.STATUSES[status] || 'Open to opportunities';
+        }
+      }
+    }
+  }
+
+  function setEffect(effect) {
+    document.documentElement.setAttribute('data-effect', effect);
+    // Re-apply hero customization with new effect
+    const greeting = document.documentElement.getAttribute('data-greeting') || 'hello-world';
+    const status = document.documentElement.getAttribute('data-status') || 'open';
+    if (window.applyHeroCustomization) {
+      window.applyHeroCustomization(greeting, status, effect);
+    }
   }
 
   function updateSwatchActive(accent) {
@@ -115,6 +172,22 @@ function initThemePlayground() {
       if (prefs.vibe) {
         setVibe(prefs.vibe);
         if (vibeSelect) vibeSelect.value = prefs.vibe;
+      }
+
+      // Load hero preferences
+      if (prefs.greeting) {
+        document.documentElement.setAttribute('data-greeting', prefs.greeting);
+        if (greetingSelect) greetingSelect.value = prefs.greeting;
+      }
+
+      if (prefs.status) {
+        document.documentElement.setAttribute('data-status', prefs.status);
+        if (statusSelect) statusSelect.value = prefs.status;
+      }
+
+      if (prefs.effect) {
+        document.documentElement.setAttribute('data-effect', prefs.effect);
+        if (effectSelect) effectSelect.value = prefs.effect;
       }
     } catch (e) {
       console.warn('Could not load theme preferences:', e);

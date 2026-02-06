@@ -160,6 +160,22 @@
 .color-swatch[data-accent="violet"] { background: #8B5CF6; }
 .color-swatch[data-accent="gold"] { background: #F59E0B; }
 
+/* Section divider */
+.playground-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 16px 0;
+}
+
+.playground-section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
 /* Combination counter */
 .playground-counter {
   margin-top: 16px;

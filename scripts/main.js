@@ -127,6 +127,24 @@ function initSmoothScroll() {
 /* --------------------------------------------------------------------------
    Hero Animation
    -------------------------------------------------------------------------- */
+
+// Hero customization maps
+const GREETINGS = {
+  'hello-world': 'Hello, World.',
+  'console-log': "console.log('Hello');",
+  'print-py': 'print("Hello")',
+  'sysout': 'System.out.println("Hello");',
+  'hi-there': 'Hi there.',
+  'welcome': 'Welcome.'
+};
+
+const STATUSES = {
+  'open': 'Open to opportunities',
+  'connect': "Let's connect",
+  'building': 'Currently building',
+  'none': null
+};
+
 function initHeroAnimation() {
   const heroElements = document.querySelectorAll('.hero .reveal');
 
@@ -141,7 +159,74 @@ function initHeroAnimation() {
       el.classList.add('active');
     });
   }, 100);
+
+  // Apply hero customization from data attributes
+  const html = document.documentElement;
+  const greeting = html.getAttribute('data-greeting') || 'hello-world';
+  const status = html.getAttribute('data-status') || 'open';
+  const effect = html.getAttribute('data-effect') || 'scramble';
+
+  applyHeroCustomization(greeting, status, effect);
 }
+
+function applyHeroCustomization(greeting, status, effect) {
+  const greetingEl = document.querySelector('.hero-greeting');
+  const statusEl = document.querySelector('.hero-status');
+  const statusText = document.querySelector('.status-text');
+
+  if (!greetingEl) return;
+
+  // Get greeting text
+  const greetingText = GREETINGS[greeting] || GREETINGS['hello-world'];
+
+  // Apply text effect
+  if (effect === 'scramble' && window.TextScramble) {
+    greetingEl.textContent = '';
+    const scramble = new TextScramble(greetingEl);
+    setTimeout(() => scramble.setText(greetingText), 500);
+  } else if (effect === 'typewriter') {
+    setTimeout(() => typewriter(greetingEl, greetingText), 500);
+  } else {
+    greetingEl.textContent = greetingText;
+  }
+
+  // Set status
+  if (statusEl) {
+    if (status === 'none' || !STATUSES[status]) {
+      statusEl.classList.add('hidden');
+    } else {
+      statusEl.classList.remove('hidden');
+      if (statusText) statusText.textContent = STATUSES[status];
+    }
+  }
+}
+
+// Typewriter effect
+function typewriter(element, text, speed = 50) {
+  element.textContent = '';
+  let i = 0;
+  const cursor = document.createElement('span');
+  cursor.className = 'typewriter-cursor';
+  cursor.textContent = '|';
+  element.appendChild(cursor);
+
+  function type() {
+    if (i < text.length) {
+      element.insertBefore(document.createTextNode(text.charAt(i)), cursor);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      setTimeout(() => cursor.remove(), 1500);
+    }
+  }
+  type();
+}
+
+// Export for use in playground
+window.GREETINGS = GREETINGS;
+window.STATUSES = STATUSES;
+window.applyHeroCustomization = applyHeroCustomization;
+window.typewriter = typewriter;
 
 /* --------------------------------------------------------------------------
    Utility: Debounce function
