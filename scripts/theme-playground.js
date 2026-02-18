@@ -122,7 +122,7 @@ function initThemePlayground() {
       } else {
         statusEl.classList.remove('hidden');
         if (statusText && window.STATUSES) {
-          statusText.textContent = window.STATUSES[status] || 'Open to opportunities';
+          statusText.textContent = window.STATUSES[status] || 'Available to chat';
         }
       }
     }

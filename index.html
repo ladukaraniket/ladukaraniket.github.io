@@ -36,17 +36,19 @@
       var g = greetings[Math.floor(Math.random() * greetings.length)];
       var e = effects[Math.floor(Math.random() * effects.length)];
       document.documentElement.setAttribute('data-greeting', g);
-      document.documentElement.setAttribute('data-status', 'open'); // Static for production
+      document.documentElement.setAttribute('data-status', 'chat'); // Static for production
       document.documentElement.setAttribute('data-effect', e);
     })();
   </script>
 
   <title>Aniket Ladukar | AWS Certified Full Stack Developer</title>
-  <meta name="description" content="Aniket Ladukar - AWS Certified Full Stack Developer with 3+ years of experience building scalable, cloud-native solutions.">
+  <meta name="description" content="Aniket Ladukar - AWS Certified Full Stack Developer with 4+ years of experience building scalable, cloud-native solutions.">
   <meta name="author" content="Aniket Mohan Ladukar">
 
   <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +63,7 @@
 
   <!-- Open Graph / Social -->
   <meta property="og:title" content="Aniket Ladukar | AWS Certified Full Stack Developer">
-  <meta property="og:description" content="AWS Certified Full Stack Developer with 3+ years of experience building scalable, cloud-native solutions.">
+  <meta property="og:description" content="AWS Certified Full Stack Developer with 4+ years of experience building scalable, cloud-native solutions.">
   <meta property="og:type" content="website">
 </head>
 <body>
@@ -99,14 +101,14 @@
         </h1>
         <p class="hero-title reveal">AWS Certified Full Stack Developer</p>
         <p class="hero-description reveal">
-          AWS Certified Developer with 3+ years of experience building scalable, cloud-native solutions. Passionate about creating beautiful interfaces, solving complex problems, and delivering high-performance, customer-first experiences.
+          AWS Certified Developer with 4+ years of experience building scalable, cloud-native solutions. Passionate about creating beautiful interfaces, solving complex problems, and delivering high-performance, customer-first experiences.
         </p>
         <div class="hero-cta reveal">
           <a href="#contact" class="btn btn-primary">Get In Touch</a>
         </div>
         <div class="hero-status reveal">
           <span class="status-dot"></span>
-          <span class="status-text">Open to opportunities</span>
+          <span class="status-text">Available to chat</span>
         </div>
         <div class="hero-social reveal">
           <a href="https://www.linkedin.com/in/ladukaraniket/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -166,7 +168,7 @@
             </div>
             <div class="about-detail">
               <span class="about-detail-label">Availability</span>
-              <span class="about-detail-value">Open to opportunities</span>
+              <span class="about-detail-value">Available to connect</span>
             </div>
           </div>
         </div>
@@ -487,7 +489,7 @@
           <h2 class="reveal reveal-delay-1">Let's Work Together</h2>
         </div>
         <p class="contact-text reveal reveal-delay-2">
-          I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+          I'm always interested in hearing about exciting projects and ideas. Whether you'd like to collaborate, have a question, or just want to say hi — feel free to reach out!
         </p>
         <a href="mailto:aniket.ladukar@gmail.com" class="contact-email reveal reveal-delay-3">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -518,7 +520,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <p class="footer-text">Designed & Built by Aniket Ladukar</p>
+
         <div class="footer-links">
           <a href="#hero" class="footer-link">Back to Top</a>
         </div>
@@ -599,9 +601,10 @@
       <div class="playground-group">
         <label class="playground-label" for="status-select">Status Badge</label>
         <select id="status-select" class="playground-select">
-          <option value="open">Open to opportunities</option>
+          <option value="chat">Available to chat</option>
           <option value="connect">Let's connect</option>
           <option value="building">Currently building</option>
+          <option value="crafting">Crafting experiences</option>
           <option value="none">Hidden</option>
         </select>
       </div>

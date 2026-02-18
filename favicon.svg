@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    :root { --bg: #111827; --fg: #F9FAFB; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #F9FAFB; --fg: #111827; }
+    }
+  </style>
+  <rect width="64" height="64" rx="14" fill="var(--bg)"/>
+  <!-- A - clean, rounded, medium weight -->
+  <path d="M14 48 L24 16 L26 16 L36 48 L33 48 L30.5 40 L19.5 40 L17 48 Z M20.5 37.5 L29.5 37.5 L25 22 Z" fill="var(--fg)" opacity="0.95"/>
+  <!-- L - matching weight, generous spacing -->
+  <path d="M39 16 L42 16 L42 45 L52 45 L52 48 L39 48 Z" fill="var(--fg)" opacity="0.95"/>
+</svg>

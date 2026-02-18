@@ -139,9 +139,10 @@ const GREETINGS = {
 };
 
 const STATUSES = {
-  'open': 'Open to opportunities',
+  'chat': 'Available to chat',
   'connect': "Let's connect",
   'building': 'Currently building',
+  'crafting': 'Crafting experiences',
   'none': null
 };
 
@@ -163,7 +164,7 @@ function initHeroAnimation() {
   // Apply hero customization from data attributes
   const html = document.documentElement;
   const greeting = html.getAttribute('data-greeting') || 'hello-world';
-  const status = html.getAttribute('data-status') || 'open';
+  const status = html.getAttribute('data-status') || 'chat';
   const effect = html.getAttribute('data-effect') || 'scramble';
 
   applyHeroCustomization(greeting, status, effect);
